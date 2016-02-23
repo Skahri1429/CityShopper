@@ -13,6 +13,13 @@
 		28755A961C7CDA8F00C719F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28755A941C7CDA8F00C719F1 /* LaunchScreen.storyboard */; };
 		28755AA11C7CDA8F00C719F1 /* CityShopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28755AA01C7CDA8F00C719F1 /* CityShopperTests.swift */; };
 		28755AAC1C7CDA8F00C719F1 /* CityShopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28755AAB1C7CDA8F00C719F1 /* CityShopperUITests.swift */; };
+		28755ABD1C7CDE6A00C719F1 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28755ABC1C7CDE6A00C719F1 /* StartViewController.swift */; };
+		28755ABF1C7CDE7F00C719F1 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28755ABE1C7CDE7F00C719F1 /* ShoppingListViewController.swift */; };
+		28755AC11C7CDE9000C719F1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28755AC01C7CDE9000C719F1 /* ProfileViewController.swift */; };
+		28755AC31C7CDE9F00C719F1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28755AC21C7CDE9F00C719F1 /* SettingsViewController.swift */; };
+		28755AC61C7CDED100C719F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28755AC51C7CDED100C719F1 /* LoginViewController.swift */; };
+		28755AC81C7CDEE900C719F1 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28755AC71C7CDEE900C719F1 /* SignupViewController.swift */; };
+		28755ACA1C7CDEFB00C719F1 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28755AC91C7CDEFB00C719F1 /* ResetPasswordViewController.swift */; };
 		714773A9CE30FD2903C8339F /* Pods_CityShopper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C41F189B6F21234D9EF1E8 /* Pods_CityShopper.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +53,13 @@
 		28755AA71C7CDA8F00C719F1 /* CityShopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityShopperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28755AAB1C7CDA8F00C719F1 /* CityShopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityShopperUITests.swift; sourceTree = "<group>"; };
 		28755AAD1C7CDA8F00C719F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28755ABC1C7CDE6A00C719F1 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		28755ABE1C7CDE7F00C719F1 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		28755AC01C7CDE9000C719F1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		28755AC21C7CDE9F00C719F1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		28755AC51C7CDED100C719F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		28755AC71C7CDEE900C719F1 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		28755AC91C7CDEFB00C719F1 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		48F01A7BB1C751F360703E37 /* Pods-CityShopper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityShopper.release.xcconfig"; path = "Pods/Target Support Files/Pods-CityShopper/Pods-CityShopper.release.xcconfig"; sourceTree = "<group>"; };
 		67C41F189B6F21234D9EF1E8 /* Pods_CityShopper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityShopper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBE9C03AEFFF74144B6FFC4 /* Pods-CityShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityShopper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CityShopper/Pods-CityShopper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +116,7 @@
 		28755A8A1C7CDA8F00C719F1 /* CityShopper */ = {
 			isa = PBXGroup;
 			children = (
+				28755ABB1C7CDE6A00C719F1 /* View Controllers */,
 				28755A8B1C7CDA8F00C719F1 /* AppDelegate.swift */,
 				28755A8F1C7CDA8F00C719F1 /* Main.storyboard */,
 				28755A921C7CDA8F00C719F1 /* Assets.xcassets */,
@@ -127,6 +142,28 @@
 				28755AAD1C7CDA8F00C719F1 /* Info.plist */,
 			);
 			path = CityShopperUITests;
+			sourceTree = "<group>";
+		};
+		28755ABB1C7CDE6A00C719F1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28755ABC1C7CDE6A00C719F1 /* StartViewController.swift */,
+				28755ABE1C7CDE7F00C719F1 /* ShoppingListViewController.swift */,
+				28755AC01C7CDE9000C719F1 /* ProfileViewController.swift */,
+				28755AC21C7CDE9F00C719F1 /* SettingsViewController.swift */,
+				28755AC41C7CDEBD00C719F1 /* SignUpVC */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		28755AC41C7CDEBD00C719F1 /* SignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				28755AC51C7CDED100C719F1 /* LoginViewController.swift */,
+				28755AC71C7CDEE900C719F1 /* SignupViewController.swift */,
+				28755AC91C7CDEFB00C719F1 /* ResetPasswordViewController.swift */,
+			);
+			path = SignUpVC;
 			sourceTree = "<group>";
 		};
 		3F253BB565E6E730F46D593F /* Frameworks */ = {
@@ -328,7 +365,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28755AC61C7CDED100C719F1 /* LoginViewController.swift in Sources */,
+				28755AC81C7CDEE900C719F1 /* SignupViewController.swift in Sources */,
 				28755A8C1C7CDA8F00C719F1 /* AppDelegate.swift in Sources */,
+				28755ACA1C7CDEFB00C719F1 /* ResetPasswordViewController.swift in Sources */,
+				28755ABD1C7CDE6A00C719F1 /* StartViewController.swift in Sources */,
+				28755AC11C7CDE9000C719F1 /* ProfileViewController.swift in Sources */,
+				28755AC31C7CDE9F00C719F1 /* SettingsViewController.swift in Sources */,
+				28755ABF1C7CDE7F00C719F1 /* ShoppingListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +515,10 @@
 			baseConfigurationReference = BBBE9C03AEFFF74144B6FFC4 /* Pods-CityShopper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = CityShopper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sarthakkhillon.CityShopper;
@@ -483,6 +531,10 @@
 			baseConfigurationReference = 48F01A7BB1C751F360703E37 /* Pods-CityShopper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = CityShopper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sarthakkhillon.CityShopper;
