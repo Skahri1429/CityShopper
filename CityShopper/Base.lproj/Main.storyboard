@@ -52,7 +52,20 @@
                     <view key="view" contentMode="scaleToFill" id="ZQc-tp-uoZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uw-Vh-Adz">
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6uw-Vh-Adz" firstAttribute="top" secondItem="Urw-hG-Hcu" secondAttribute="bottom" constant="269" id="26y-wi-Y9E"/>
+                            <constraint firstItem="6uw-Vh-Adz" firstAttribute="centerY" secondItem="ZQc-tp-uoZ" secondAttribute="centerY" id="m51-4i-bJI"/>
+                            <constraint firstItem="6uw-Vh-Adz" firstAttribute="centerX" secondItem="ZQc-tp-uoZ" secondAttribute="centerX" id="nfa-ZM-FSE"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NiN-pb-ERd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -88,7 +101,20 @@
                     <view key="view" contentMode="scaleToFill" id="nHs-xz-H9h">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPx-dn-YdK">
+                                <rect key="frame" x="282" y="289" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wPx-dn-YdK" firstAttribute="top" secondItem="x0o-ev-8aG" secondAttribute="bottom" constant="269" id="AvG-Va-Zeo"/>
+                            <constraint firstItem="wPx-dn-YdK" firstAttribute="centerX" secondItem="nHs-xz-H9h" secondAttribute="centerX" id="QsL-5b-Vde"/>
+                            <constraint firstItem="wPx-dn-YdK" firstAttribute="centerY" secondItem="nHs-xz-H9h" secondAttribute="centerY" id="grt-OF-36Y"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dby-B2-Haf" userLabel="First Responder" sceneMemberID="firstResponder"/>
