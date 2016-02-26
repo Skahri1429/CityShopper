@@ -8,8 +8,9 @@
 
 import UIKit
 import Parse
+import Stripe
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, STPPaymentCardTextFieldDelegate {
 
     
     @IBOutlet weak var imageView: UIImageView!
@@ -17,11 +18,20 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var zipTextField: UITextField!
     
+    let paymentTextField = STPPaymentCardTextField()
+
+    func paymentCardTextFieldDidChange(textField: STPPaymentCardTextField) {
+        // Toggle navigation, for example
+        saveButton.enabled = textField.isValid
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        paymentTextField.frame = CGRectMake(15, 15, CGRectGetWidth(self.view.frame) - 30, 44)
+        paymentTextField.delegate = self
+        view.addSubview(paymentTextField)
     }
 
     override func didReceiveMemoryWarning() {

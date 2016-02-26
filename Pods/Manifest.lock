@@ -21,6 +21,9 @@ PODS:
   - ParseUI (1.2.0):
     - Bolts/Tasks (~> 1.3)
     - Parse (~> 1.9)
+  - Stripe (6.2.0):
+    - Stripe/Core (= 6.2.0)
+  - Stripe/Core (6.2.0)
 
 DEPENDENCIES:
   - Bond
@@ -29,6 +32,7 @@ DEPENDENCIES:
   - Parse (~> 1.11.0)
   - ParseFacebookUtilsV4
   - ParseUI
+  - Stripe
 
 SPEC CHECKSUMS:
   Bolts: f52a250053bb517ca874523c3913776359ab3def
@@ -39,5 +43,6 @@ SPEC CHECKSUMS:
   Parse: 886af46a0a677402f6374bb97ac212e795f70afe
   ParseFacebookUtilsV4: eab9b4ade12f0800b4d30f6b808bca55ce17a0e9
   ParseUI: af2eba584799da4a9fbdac0e178662d7438b502e
+  Stripe: 275524137e6c4cc1058f6d32ece248adf30a21f9
 
 COCOAPODS: 0.39.0

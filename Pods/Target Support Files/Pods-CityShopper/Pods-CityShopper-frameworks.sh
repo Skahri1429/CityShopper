@@ -92,6 +92,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-CityShopper/Parse.framework"
   install_framework "Pods-CityShopper/ParseFacebookUtilsV4.framework"
   install_framework "Pods-CityShopper/ParseUI.framework"
+  install_framework "Pods-CityShopper/Stripe.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-CityShopper/Bolts.framework"
@@ -102,4 +103,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-CityShopper/Parse.framework"
   install_framework "Pods-CityShopper/ParseFacebookUtilsV4.framework"
   install_framework "Pods-CityShopper/ParseUI.framework"
+  install_framework "Pods-CityShopper/Stripe.framework"
 fi
