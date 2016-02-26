@@ -11,17 +11,13 @@ import Parse
 
 class ProfileViewController: UIViewController {
 
-    @IBAction func logOutAction(sender: AnyObject){
-        
-        // Send a request to log out a user
-        PFUser.logOut()
-        
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login") as! LoginViewController
-            self.presentViewController(viewController, animated: true, completion: nil)
-        })
-        
-    }
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var zipTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

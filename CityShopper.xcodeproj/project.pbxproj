@@ -55,7 +55,7 @@
 		28755AAD1C7CDA8F00C719F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28755ABC1C7CDE6A00C719F1 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		28755ABE1C7CDE7F00C719F1 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
-		28755AC01C7CDE9000C719F1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		28755AC01C7CDE9000C719F1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		28755AC21C7CDE9F00C719F1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		28755AC51C7CDED100C719F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		28755AC71C7CDEE900C719F1 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -149,7 +149,6 @@
 			children = (
 				28755ABC1C7CDE6A00C719F1 /* StartViewController.swift */,
 				28755ABE1C7CDE7F00C719F1 /* ShoppingListViewController.swift */,
-				28755AC01C7CDE9000C719F1 /* ProfileViewController.swift */,
 				28755AC21C7CDE9F00C719F1 /* SettingsViewController.swift */,
 				28755AC41C7CDEBD00C719F1 /* SignUpVC */,
 			);
@@ -162,6 +161,7 @@
 				28755AC51C7CDED100C719F1 /* LoginViewController.swift */,
 				28755AC71C7CDEE900C719F1 /* SignupViewController.swift */,
 				28755AC91C7CDEFB00C719F1 /* ResetPasswordViewController.swift */,
+				28755AC01C7CDE9000C719F1 /* ProfileViewController.swift */,
 			);
 			path = SignUpVC;
 			sourceTree = "<group>";
