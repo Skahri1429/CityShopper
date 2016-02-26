@@ -405,15 +405,18 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gTQ-Ta-egd">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="52" y="130" width="75" height="75"/>
+                                </variation>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" placeholder="Name" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="LqX-PM-HY8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" placeholder="Name" clearsOnBeginEditing="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="LqX-PM-HY8">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9mx-4b-625"/>
                                     <constraint firstAttribute="width" constant="97" id="FBu-TO-4zq"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -421,29 +424,94 @@
                                         <exclude reference="FBu-TO-4zq"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="140" y="130" width="245" height="30"/>
                                     <mask key="constraints">
                                         <include reference="9mx-4b-625"/>
                                         <include reference="FBu-TO-4zq"/>
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Zip Code" placeholder="Zip Code" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="OSs-yy-hq9">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name" placeholder="Last Name" clearsOnBeginEditing="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="rXG-gH-zdj">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Xfe-7N-VqI"/>
+                                    <constraint firstAttribute="height" constant="30" id="4gK-yv-eYk"/>
+                                    <constraint firstAttribute="width" constant="97" id="F7R-Da-j7b"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4gK-yv-eYk"/>
+                                        <exclude reference="F7R-Da-j7b"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="140" y="175" width="245" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="4gK-yv-eYk"/>
+                                        <include reference="F7R-Da-j7b"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Address" placeholder="Preferred Address" clearsOnBeginEditing="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="seJ-W0-W1L">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RzR-h7-Xxf"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="Xfe-7N-VqI"/>
+                                        <exclude reference="RzR-h7-Xxf"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="52" y="213" width="328" height="30"/>
                                     <mask key="constraints">
-                                        <include reference="Xfe-7N-VqI"/>
+                                        <include reference="RzR-h7-Xxf"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="City" placeholder="Preferred Address" clearsOnBeginEditing="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="aFS-fG-DF2">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qhx-Ot-XKa"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qhx-Ot-XKa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="52" y="284" width="193" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="qhx-Ot-XKa"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="State" placeholder="Preferred Address" clearsOnBeginEditing="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="kFp-Rg-MdH">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JNv-dV-ydU"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JNv-dV-ydU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="52" y="246" width="59" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="JNv-dV-ydU"/>
                                     </mask>
                                 </variation>
                             </textField>
@@ -489,6 +557,60 @@
                                     <segue destination="raK-f7-Lsm" kind="unwind" unwindAction="unwindToLogInScreen:" id="zjf-ut-frm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NZ-us-H19">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="80" width="180" height="37"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5K-5c-QrT">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="347" width="100" height="37"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Zip Code" placeholder="Zip Code" clearsOnBeginEditing="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="OSs-yy-hq9">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Xfe-7N-VqI"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Xfe-7N-VqI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="140" y="246" width="111" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="Xfe-7N-VqI"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Help" translatesAutoresizingMaskIntoConstraints="NO" id="wS5-Al-1iD">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="127" y="359" width="15" height="15"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpY-IA-9jY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="172" y="413" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="setupApplePay:" destination="1O1-1c-0Tx" eventType="touchUpInside" id="2My-zb-PA3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -511,9 +633,17 @@
                             <mask key="subviews">
                                 <exclude reference="gTQ-Ta-egd"/>
                                 <exclude reference="LqX-PM-HY8"/>
-                                <exclude reference="OSs-yy-hq9"/>
+                                <exclude reference="rXG-gH-zdj"/>
+                                <exclude reference="seJ-W0-W1L"/>
+                                <exclude reference="aFS-fG-DF2"/>
+                                <exclude reference="kFp-Rg-MdH"/>
                                 <exclude reference="kI8-JV-gjZ"/>
                                 <exclude reference="Qci-CS-XF9"/>
+                                <exclude reference="9NZ-us-H19"/>
+                                <exclude reference="W5K-5c-QrT"/>
+                                <exclude reference="OSs-yy-hq9"/>
+                                <exclude reference="wS5-Al-1iD"/>
+                                <exclude reference="rpY-IA-9jY"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="V2e-yo-4vu"/>
@@ -536,9 +666,17 @@
                             <mask key="subviews">
                                 <include reference="gTQ-Ta-egd"/>
                                 <include reference="LqX-PM-HY8"/>
-                                <include reference="OSs-yy-hq9"/>
+                                <include reference="rXG-gH-zdj"/>
+                                <include reference="seJ-W0-W1L"/>
+                                <include reference="aFS-fG-DF2"/>
+                                <include reference="kFp-Rg-MdH"/>
                                 <include reference="kI8-JV-gjZ"/>
                                 <include reference="Qci-CS-XF9"/>
+                                <include reference="9NZ-us-H19"/>
+                                <include reference="W5K-5c-QrT"/>
+                                <include reference="OSs-yy-hq9"/>
+                                <include reference="wS5-Al-1iD"/>
+                                <include reference="rpY-IA-9jY"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="V2e-yo-4vu"/>
@@ -559,6 +697,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="applePayButton" destination="rpY-IA-9jY" id="yfC-5g-haa"/>
                         <outlet property="imageView" destination="gTQ-Ta-egd" id="25a-KY-p5v"/>
                         <outlet property="nameTextField" destination="LqX-PM-HY8" id="hTD-ZV-8El"/>
                         <outlet property="saveButton" destination="Qci-CS-XF9" id="0oZ-cY-tNn"/>
@@ -664,4 +803,7 @@
             <point key="canvasLocation" x="348" y="-391"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Help" width="50" height="50"/>
+    </resources>
 </document>

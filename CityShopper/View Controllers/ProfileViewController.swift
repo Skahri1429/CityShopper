@@ -9,34 +9,28 @@
 import UIKit
 import Parse
 import Stripe
+import PassKit
 
-class ProfileViewController: UIViewController, STPPaymentCardTextFieldDelegate {
+class ProfileViewController: UIViewController, PKPaymentAuthorizationViewControllerDelegate {
     
     @IBAction func saveInfo(sender: AnyObject) {
-        let cardParams: STPCardParams = STPCardParams()
-        cardParams.name = nameTextField.text
-        cardParams.addressZip = zipTextField.text
+        
     }
 
+    @IBAction func setupApplePay(sender: AnyObject) {
+        
+    }
+    @IBOutlet weak var applePayButton: PKPaymentButton!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var zipTextField: UITextField!
     
-    let paymentTextField = STPPaymentCardTextField()
-
-    func paymentCardTextFieldDidChange(textField: STPPaymentCardTextField) {
-        // Toggle navigation, for example
-        self.saveButton.enabled = textField.isValid
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        saveButton.enabled = false
-        paymentTextField.frame = CGRectMake(15, 15, CGRectGetWidth(self.view.frame) - 30, 44)
-        paymentTextField.delegate = self
-        view.addSubview(paymentTextField)
+        self.applePayButton = PKPaymentButton()
+        
     }
 
     override func didReceiveMemoryWarning() {
