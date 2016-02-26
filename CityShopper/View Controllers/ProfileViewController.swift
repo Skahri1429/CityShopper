@@ -11,8 +11,14 @@ import Parse
 import Stripe
 
 class ProfileViewController: UIViewController, STPPaymentCardTextFieldDelegate {
-
     
+    @IBAction func saveInfo(sender: AnyObject) {
+        let cardParams: STPCardParams = STPCardParams()
+        cardParams.name = nameTextField.text
+        cardParams.addressZip = zipTextField.text
+    }
+
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
@@ -22,13 +28,12 @@ class ProfileViewController: UIViewController, STPPaymentCardTextFieldDelegate {
 
     func paymentCardTextFieldDidChange(textField: STPPaymentCardTextField) {
         // Toggle navigation, for example
-        saveButton.enabled = textField.isValid
+        self.saveButton.enabled = textField.isValid
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        saveButton.enabled = false
         paymentTextField.frame = CGRectMake(15, 15, CGRectGetWidth(self.view.frame) - 30, 44)
         paymentTextField.delegate = self
         view.addSubview(paymentTextField)
