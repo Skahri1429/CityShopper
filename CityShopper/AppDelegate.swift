@@ -1,4 +1,4 @@
-//
+ //
 //  AppDelegate.swift
 //  CityShopper
 //
@@ -18,10 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        Parse.enableLocalDatastore()
+        //Parse.enableLocalDatastore()
         
         // Initialize Parse.
-        Parse.setApplicationId("OnOQxcQxYNKZcczyST4KKsDE5HQj8uUccoWLy1xj", clientKey: "f7Jw2X4XzSW0whm2aDtYl7wdIYn5hZVvHuPJ72zu")
+        Parse.setApplicationId("OnOQxcQxYNKZcczyST4KKsDE5HQj8uUccoWLy1xj", clientKey: "nBSvW6bHqnlKDx7Aom21UolA3Gy2zZH1gnz294oL")
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
