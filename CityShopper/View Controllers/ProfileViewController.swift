@@ -8,28 +8,49 @@
 
 import UIKit
 import Parse
-import Stripe
-import PassKit
 
-class ProfileViewController: UIViewController, PKPaymentAuthorizationViewControllerDelegate {
+class ProfileViewController: UIViewController {
     
-    @IBAction func saveInfo(sender: AnyObject) {
+    @IBAction func next(sender: AnyObject) {
+        guard let fName = firstNameTextField.text else {
+            _ = ""
+            return
+        }
+        guard let lName = lastNameTextField.text else {
+            _ = ""
+            return
+        }
+        guard let zCode = zipCodeTextField.text else {
+            _ = ""
+            return
+        }
         
-    }
-
-    @IBAction func setupApplePay(sender: AnyObject) {
         
+        let currentUser = PFObject(className: "User")
+        currentUser["firstName"] = fName
+        currentUser["lastName"] = lName
+        currentUser["ZipCode"] = zCode
+        
+        currentUser.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if success {
+                print("Successful save")
+            }
+            else {
+                print("failed")
+            }
+        }
     }
-    @IBOutlet weak var applePayButton: PKPaymentButton!
-    @IBOutlet weak var saveButton: UIButton!
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var zipTextField: UITextField!
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var zipCodeTextField: UITextField!
+    @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.applePayButton = PKPaymentButton()
         
     }
 
